@@ -12,10 +12,15 @@
   }
   /* Fin de las variables de colores */
 
-.body{
-    background-color: whitesmoke;
+body{
+    background-color: #F5F5F5;
 }
 
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Comienzo del Header */
 .header{
     height: 50px;
     background-color: var(--Blue);
@@ -67,3 +72,37 @@
         border-radius: 5px;
 
     }
+
+/* Fin del Headder */
+
+/*  Comienzo del Hero */
+
+
+.hero{
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 300px;
+    background-image: url(/img/hero.png);
+}
+
+    .containerHero{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 1200px;
+        margin: 0 auto;
+        border: 1px solid blue;
+        height: 300px;
+    }
+
+        .heroTitle{
+            text-align: center;
+            color: var(--DarkPurple);
+        }
+
+        .heroTitle .show{
+            color: var(--Purple);
+        }
+
+
+/* Fin del Hero */
