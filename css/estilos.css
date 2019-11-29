@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6{
     }
 
 /* Fin del Headder */
-
+/* Miguel Zabala Figueroa, Barranquilla/Colombia */
 /*  Comienzo del Hero */
 
 
@@ -89,7 +89,7 @@ h1, h2, h3, h4, h5, h6{
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 1200px;
+        max-width: 1200px;
         margin: 0 auto;
         border: 1px solid blue;
         height: 300px;
@@ -106,3 +106,26 @@ h1, h2, h3, h4, h5, h6{
 
 
 /* Fin del Hero */
+
+
+/* Desde aquí comienza el contenido */
+
+.containerContent{
+    border: 1px solid red;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Aquí termina el contenido*/
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px){
+    .menu{
+        display: none;
+    }
+    .containerHeader{
+        justify-content: center;
+    }
+}
