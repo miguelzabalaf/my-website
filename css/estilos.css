@@ -125,7 +125,7 @@ h1{
 .section1{
     padding: 1em 0 0 0 ;
     margin: 0 auto;
-    width: 100%;
+    width: 95%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -133,7 +133,13 @@ h1{
     /* border: 1px solid green; */
 }
 
-
+/* .articleContainer{
+    width: 100%
+    {
+    .a1s1{
+    width: 100%
+    }
+         */
 .articleContainer{
     display: flex;
     justify-content: space-between;
@@ -363,6 +369,8 @@ h1{
                     .a1s2CardImageContainer{
                         width: 80%;
                         display: flex;
+                        border-radius: 50%;
+                        overflow: hidden;
                         justify-content: center;
                         align-items: center;
 
@@ -370,6 +378,10 @@ h1{
                     .a1s2CardImageContainer img{
                         width: 100%;
                         border-radius: 50%;
+                        transition: all 0.3s;
+                    }
+                    .a1s2CardImageContainer img:hover{
+                        transform: scale(1.2);
                     }
                 
                 .a1s2Details{
@@ -514,6 +526,11 @@ h1{
 
     .redes{
         display: none;
+    }
+}
+@media screen and (max-width:773px){
+    .a1s2CardImageContainer img:hover{
+        transform: scale(1);
     }
 }
 @media screen and (max-width:773px) and (min-width:672px){
@@ -698,3 +715,36 @@ h1{
     }
 }
 
+@media screen and (max-width:610px){
+
+    .section1{
+        width: 97%;
+        margin-left: 0;
+        margin-right: 0;
+        margin: 0 auto;
+    }
+    .articleContainer{
+    width: 100%
+    }
+
+        .articleImg{
+            width: 15%;
+        }
+        .articleDetails{
+            width: 75%;
+        }
+    .a1s1{
+    width: 100%
+    }
+    .a2s1{
+        width: 100%
+        }
+    .a3s1{
+        width: 100%
+    }
+    .a4s1{
+        width: 100%
+    }
+
+
+}
