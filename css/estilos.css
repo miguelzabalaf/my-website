@@ -18,6 +18,25 @@ body{
     
 }
 
+.icon-nav{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: var(--Purple);
+    box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
+    color: var(--LightBlue);
+    padding: 1em;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 1em;
+    transition: all .2s;
+}
+
 h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     transition: all 0.3s;
@@ -771,6 +790,10 @@ h1{
 @media screen and (max-width: 768px){
     .menu{
         display: none;
+    }
+
+    .icon-nav{
+        display: inline-flex;
     }
     .containerHeader{
         justify-content: center;
