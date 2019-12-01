@@ -18,6 +18,11 @@ body{
     
 }
 
+/* MENU RESPONSIVE */
+#menu-bar{
+    display: none;
+
+}
 .icon-nav{
     width: 50px;
     height: 50px;
@@ -35,7 +40,51 @@ body{
     right: 0;
     margin: 1em;
     transition: all .2s;
+    cursor: pointer;
 }
+
+
+
+    .menuResponsive{
+        background-image: url(/img/hero.png);
+        height: 300px;
+        width: 100%;
+        position: fixed;
+        opacity: 0.9;
+        top: 0;
+        margin-top: 3em;
+        transition: all 0.3s;
+        transform: translateY(-100%);
+        /* display: none; */
+    }
+
+ #menu-bar:checked ~ .menuResponsive{
+    transform: translateY(0);
+}   
+    .menuResponsiveContainer a{
+        display: block;
+        margin: 1.5em auto;
+        width: 60%;
+        justify-content: center;
+        background-color: transparent;
+        text-align: center;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.2em; 
+        color: var(--DarkPurple);
+    }
+
+    .menuResponsiveContainer .menuContact{
+        background-color: var(--Purple);
+        color: white;
+        padding: 0.5em;
+
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px -3px rgba(0,0,0,0.75);
+    }
+
+/* FIN DE MENU RESPONSIVE */
+
 
 h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -45,10 +94,16 @@ h1{
 /* Comienzo del Header */
 .header{
     height: 50px;
+    width: 100%;
     background-color: var(--Blue);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
     /* border: 1px solid red; */
 }
 
@@ -791,6 +846,7 @@ h1{
     .menu{
         display: none;
     }
+
 
     .icon-nav{
         display: inline-flex;
