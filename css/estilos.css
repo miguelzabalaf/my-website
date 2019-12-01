@@ -930,6 +930,10 @@ h1{
     .sectionSeeMore a{
         width: 100%;
         height: 55px;
+        /* font-size: 1.2em; */
+    }
+    h1{
+        font-size: 1.5em;
     }
 }
 
