@@ -20,6 +20,7 @@ body{
 
 h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all 0.3s;
 }
 
 /* Comienzo del Header */
@@ -62,17 +63,20 @@ h1{
     transition: all 0.5s;
 }
 
-    .menu a:hover{
+    .menu .menuItem:hover{
         opacity: 0.2;
     }
 
     .menu .menuContact{
-        border: 2px solid var(--DarkPurple);
-        background-color: var(--DarkPurple);
-        color: var(--Blue);
+        background-color: var(--Purple);
+        color: white;
         padding: 0.5em;
         border-radius: 5px;
+        box-shadow: 0px 0px 5px -3px rgba(0,0,0,0.75);
+    }
 
+    .menu .menuContact:hover{
+        box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
     }
 
 /* Fin del Headder */
@@ -308,6 +312,43 @@ h1{
 
     /* Aquí finaliza SECTION1 */
 
+    /* Aquí comienza section see more */
+        .sectionSeeMore{
+            /* border: 1px solid red; */
+            width: 100%;
+            height: auto;
+            padding: 0 0.5em;
+            margin: 0 0 1em 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+            .sectionSeeMore a{
+                text-decoration: none;
+                /* border: 1px solid blue; */
+                height: 35px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0 0.5em;
+                color: white;
+                background-color: var(--Purple);
+                border-radius: 5px;
+                box-shadow: 0px 0px 5px -3px rgba(0,0,0,0.75);
+                transition: all 0.3s;
+            }
+
+            .sectionSeeMore a:hover{
+                border: 1px solid var(--DarkPurple);
+                box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
+            }
+            
+            .sectionSeeMore a span:hover{
+                color: rgb(247, 255, 131);
+
+            }
+    /* Aquí finaliza section see more */
 
     /* Aquí comienza SECTION2 */
 .section2{
@@ -429,7 +470,7 @@ h1{
 
     .a2s2{
         width: 300px;
-        height: 500px;
+        height: auto;
         border-radius: 5px;
         /* border: 1px solid rgb(212, 212, 212); */
         box-shadow: 0px 0px 5px -3px rgba(0,0,0,0.75);
@@ -438,13 +479,93 @@ h1{
     }
 
         .a2s2Card{
-            border: 1px solid rgb(212, 212, 212);
-            background-color: rgb(212, 212, 212);
+            /* border: 1px solid red; */
+            border-radius: 5px;
+            background-color: #white;
             width: 100%;
-            height: 125px;
+            height: auto;
             margin-bottom: 1em;
-
+            padding: 0.5em;
+            box-shadow: 0px 0px 5px -3px rgba(0,0,0,0.75);
+            
+            
         }
+
+            .a2s2CardTitle{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                margin: 0.5em;
+                /* border: 1px solid purple; */
+            }
+
+
+
+
+            .a2s2CardContent{
+                /* border: 1px solid blue; */
+                margin: 0.5em 0.5em 0 0.5em;
+                height: auto;
+                padding: 0.5em;
+
+            }
+
+                .a2s2CardContentitem{
+                    display: flex;
+                    align-content: center;
+                    justify-content: center;
+                }
+                
+                .a2s2CardContentitem a{
+                    text-decoration: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 100%;
+
+                    padding: 0.2em 0.2em;
+                    margin-bottom: 0.5em;
+                    border-radius: 5px;
+                    background-color: var(--Purple);
+                    color: white;
+                    
+                }
+
+
+
+    .a2s2CardPlataformsContent{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        border: 1px solid red;
+        margin: 0.5em 0.5em 0 0.5em;
+
+    }
+    
+        .plataform{
+            width: 100px;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .plataformImg{
+            border: 1px solid yellow;
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            .plataformImg img{
+                border: 1px solid blue;
+                width: 100%;
+                height: 100%;
+            }
 
         .redes{
         border: 1px solid rgb(212, 212, 212);            
@@ -461,6 +582,7 @@ h1{
             }
 
             .redesContainer a{
+                text-decoration: none;
                 font-size: 26px;
                 color: var(--DarkPurple);
                 border: 1px solid blue;
@@ -498,7 +620,7 @@ h1{
 
     .a2s2Card{
         width: 200px;
-        height: 93px;
+        height: auto;
         margin: 0 1em 1em 0;
 
     }
@@ -535,7 +657,7 @@ h1{
 
     .a2s2Card{
         width: 225px;
-        height: 126px;
+        height: auto;
         margin-right: 0;
     }
 
@@ -574,7 +696,7 @@ h1{
 
     .a2s2Card{
         width: 200px;
-        height: 93px;
+        height: auto;
 
     }
 
@@ -609,7 +731,7 @@ h1{
     }
     .a2s2Card{
         width: 266px;
-        height: 125px;
+        height: auto;
     }
     .redes{
         display: none;
@@ -730,6 +852,12 @@ h1{
     }
 }
 
+@media screen and (min-width:1024px){
+    h1{
+        font-size: 2.5em;
+    }
+}
+
 @media screen and (max-width:610px){
 
     .section1{
@@ -759,5 +887,17 @@ h1{
     }
     .a4s1{
         width: 100%
+    }
+
+    .sectionSeeMore{
+        width: 97%;
+        margin-left: 0;
+        margin-right: 0;
+        margin: 0 auto;
+        margin-bottom: 1em;
+        padding: 0;
+    }
+    .sectionSeeMore a{
+        width: 100%;
     }
 }
