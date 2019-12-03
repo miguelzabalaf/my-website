@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 /* Variaables de colores */
@@ -103,7 +104,7 @@ h1{
     top: 0;
     left: 0;
     box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 .containerHeader{
@@ -112,7 +113,7 @@ h1{
     justify-content: space-between;
     width: 1200px;
     margin: 0 auto;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 .logo{
@@ -191,7 +192,7 @@ h1{
 /* Desde aquí comienza el contenido */
 
 .containerContent{
-    /* border: 1px solid red; */
+    border: 1px solid red;
     max-width: 1200px;
     margin: 0 auto;
     padding:0 
@@ -400,6 +401,7 @@ h1{
             .sectionSeeMore a{
                 text-decoration: none;
                 /* border: 1px solid blue; */
+                border-bottom: 3px solid var(--DarkPurple);
                 height: 35px;
                 display: flex;
                 align-items: center;
@@ -413,11 +415,10 @@ h1{
             }
 
             .sectionSeeMore a:hover{
-                border: 1px solid var(--DarkPurple);
                 box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
             }
             
-            .sectionSeeMore a span:hover{
+            .sectionSeeMore a:hover span{
                 color: rgb(247, 255, 131);
 
             }
@@ -432,7 +433,7 @@ h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* border: 1px solid green; */
+    border: 1px solid green;
 }
 
     .a1s2{

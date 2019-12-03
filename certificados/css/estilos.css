@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;  
+}
+
+.certificacionesContainer{
+    border: 1px solid blue;
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 500px));
+    grid-gap: 1em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.certificaciones{
+    border: 1px solid orange;
+}
+
+/* MEDIAQUERIES ~ MIGUEL ZABALA F */
+
+
+@media screen and (max-width: 1073px){
+    .certificacionesContainer{
+        grid-template-columns: 1fr;
+    }
+}
