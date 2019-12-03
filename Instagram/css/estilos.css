@@ -1,0 +1,170 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #FAFAFA;
+}
+
+.header{
+    /* border: 1px solid red; */
+    height: 77px;
+    width: auto;
+    border-bottom: 1px solid #DBDBDB;
+
+}
+
+.menu{
+    padding: 26px 20px;
+    /* border: 1px solid blue; */
+    height: 100%;
+    width: 1010px;
+    margin: 0 auto;
+    display: flex;    
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.containerMenu1{
+    /* border: 1px solid red; */
+    height: 100%;
+    width: auto;
+    display: flex;    
+    align-items: center;
+    justify-content: flex-start;
+}
+.menu div span{
+    font-size: 24px;
+}
+
+.menu img{
+    margin-left: 15px;
+    margin-top: 0.5em;
+}
+
+.containerMenu2{
+    /* border: 1px solid red; */
+    height: 100%;
+    width: auto;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+}
+
+    .buscar{
+        width: 215px;
+        height: 28px;
+        border: 1px solid #DBDBDB;
+        border-radius: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #A5A7AA;
+        background-color: #FAFAFA;
+    }
+    .buscar p{
+        font-size: 14px;
+    }
+
+    .containerMenu3{
+        /* border: 1px solid red; */
+        height: 100%;
+        width: auto;
+        display: flex;    
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icono span{
+        margin-right: 0.5em;
+    }
+
+    /* AQUÍ COMIENZA EL CONTENIDO DEL HEADER */
+.containerContent{
+    border: 1px solid red;
+    width: 975px;
+    margin: 0 auto;
+    padding: 60px 20px 0;
+}
+
+    .containerContentHeader{
+        border: 1px solid blue;
+        width: 935px;
+        height: 174px;
+        margin: 0 0 44px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+        .containerItem{
+            border: 1px solid red;
+        }
+
+        .containerItem:nth-of-type(1){
+            grid-row: 1 / span 4;
+        }
+        .containerItem:nth-of-type(2){
+            grid-row: 1 / span 2;
+        }
+    
+    .containerItem:nth-of-type(1){
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+    .imgUser{
+        border: 2px solid blue;
+        width: 166px;
+        height: 166px; 
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .imgUser img{
+        width: 150px;
+        border-radius: 50%;
+    }
+
+    .containerItem:nth-of-type(2){
+        display: grid;
+        grid-template-columns: [inicio]1fr 1fr 1fr[publicaciones] 1fr 1fr[username] 1fr 1fr[seguidores] 1fr [siguiendo]1fr[boton1] 1fr[boton2];
+        grid-template-rows: 1fr 1fr;
+    }
+
+        .containerSubItem:nth-of-type(1){
+            background-color: rgb(219, 219, 219);
+            grid-column: inicio / username;
+        }
+
+        .containerSubItem:nth-of-type(2){
+            background-color: rgb(180, 180, 180);
+            grid-column: username / siguiendo;
+        }
+
+        .containerSubItem:nth-of-type(3){
+            background-color: rgb(141, 141, 141);
+            grid-column: siguiendo / boton1;
+        }
+        .containerSubItem:nth-of-type(4){
+            background-color: rgb(78, 78, 78);
+            grid-column: boton1 / boton2;
+        }
+        .containerSubItem:nth-of-type(5){
+            background-color: rgb(146, 146, 146);
+            grid-column: inicio / publicaciones;
+        }
+        .containerSubItem:nth-of-type(6){
+            background-color: rgb(78, 78, 78);
+            grid-column: publicaciones / seguidores;
+        }
+        .containerSubItem:nth-of-type(7){
+            background-color: rgb(192, 192, 192);
+            grid-column: seguidores / boton2;
+        }
+    /* AQUI FINALIZA EL CONTENIDO DEL HEADER */
