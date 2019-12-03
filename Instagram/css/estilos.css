@@ -14,6 +14,7 @@ body{
     height: 77px;
     width: auto;
     border-bottom: 1px solid #DBDBDB;
+    background-color: #fff;
 
 }
 
@@ -85,32 +86,37 @@ body{
 
     /* AQUÍ COMIENZA EL CONTENIDO DEL HEADER */
 .containerContent{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 975px;
     margin: 0 auto;
     padding: 60px 20px 0;
 }
 
     .containerContentHeader{
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
         width: 935px;
         height: 174px;
         margin: 0 0 44px;
         display: grid;
         grid-template-columns: 1fr 2fr;
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(7, 1fr);
     }
 
-        .containerItem{
-            border: 1px solid red;
-        }
+
 
         .containerItem:nth-of-type(1){
-            grid-row: 1 / span 4;
+            grid-row: 1 / span 7;
         }
         .containerItem:nth-of-type(2){
-            grid-row: 1 / span 2;
+            grid-row: 1 / span 3;   
         }
+        .containerItem:nth-of-type(3){
+            grid-row: 4 / span 3;   
+        }
+        .containerItem:nth-of-type(4){
+            grid-row: 7 / span 1;   
+        }
+
     
     .containerItem:nth-of-type(1){
         display: grid;
@@ -118,7 +124,7 @@ body{
         align-content: center;
     }
     .imgUser{
-        border: 2px solid blue;
+        border: 2px solid #DBDBDB;
         width: 166px;
         height: 166px; 
         border-radius: 50%;
@@ -133,38 +139,166 @@ body{
 
     .containerItem:nth-of-type(2){
         display: grid;
-        grid-template-columns: [inicio]1fr 1fr 1fr[publicaciones] 1fr 1fr[username] 1fr 1fr[seguidores] 1fr [siguiendo]1fr[boton1] 1fr[boton2];
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: [inicio]1fr 1fr[p] 1fr[publicaciones] 1fr [seguidores]1fr [siguiendo]1fr [boton1] .005fr [boton2] .995fr 1fr[fin] 1fr 1fr;
+        grid-template-rows: [uno]1fr 1fr [dos]1fr[tres];
     }
 
         .containerSubItem:nth-of-type(1){
-            background-color: rgb(219, 219, 219);
-            grid-column: inicio / username;
+            /* border: 1px solid red; */
+            grid-column: inicio / publicaciones;
+            grid-row: uno / dos;
+            display: grid;
+            align-self: center;
         }
+
+            .containerSubItem:nth-of-type(1) h1{
+                font-weight: lighter;
+                font-size: 24px;
+                color: #545454;
+            }
 
         .containerSubItem:nth-of-type(2){
-            background-color: rgb(180, 180, 180);
-            grid-column: username / siguiendo;
+
+            grid-column: publicaciones / siguiendo;
+            grid-row: uno / dos;
+            align-self: center;
+            justify-self: center;
         }
 
+            .containerSubItem:nth-of-type(2) p{
+                border: 1px solid #DBDBDB;
+                font-size: 13px;
+                font-weight: 700;
+                color: rgb(58, 58, 58);
+                border-radius: 3px;
+                padding: 0.35em 1.7em;
+
+            }
+
         .containerSubItem:nth-of-type(3){
-            background-color: rgb(141, 141, 141);
+            /* border: 1px solid red; */
             grid-column: siguiendo / boton1;
+            grid-row: uno / dos;
+            align-self: center;
+            justify-self: center;
         }
+
+            .containerSubItem:nth-of-type(3) p{
+                border: 1px solid #DBDBDB;
+                font-size: 9px;
+                font-weight: bolder;
+                color: rgb(58, 58, 58);
+                border-radius: 3px;
+                padding: 0.8em 1.55em;
+
+            }
+
         .containerSubItem:nth-of-type(4){
-            background-color: rgb(78, 78, 78);
+            /* border: 1px solid red; */
             grid-column: boton1 / boton2;
+            grid-row: uno / dos;
+            justify-self: start;
+            align-self: center;
+
         }
+
+            .containerSubItem:nth-of-type(4) p{
+                /* border: 1px solid red; */
+                font-size: 24px;
+                font-weight: bolder;
+                color: rgb(58, 58, 58);
+                border-radius: 3px;
+                padding-bottom: 0.6em;
+
+            }
         .containerSubItem:nth-of-type(5){
-            background-color: rgb(146, 146, 146);
-            grid-column: inicio / publicaciones;
+            /* border: 1px solid red; */
+            grid-column: inicio / p;
+            align-self: center;
         }
+
         .containerSubItem:nth-of-type(6){
-            background-color: rgb(78, 78, 78);
-            grid-column: publicaciones / seguidores;
+            /* border: 1px solid red; */
+            grid-column: p / siguiendo;
+            justify-self: center;
+            align-self: center;
         }
         .containerSubItem:nth-of-type(7){
-            background-color: rgb(192, 192, 192);
-            grid-column: seguidores / boton2;
+            /* border: 1px solid red; */
+            grid-column: siguiendo / fin;
+            align-self: center;
         }
+
+
+            .containerSubItem p{
+                font-size: 15px;
+                color:  rgb(41, 41, 41);
+                font-weight: 500;
+            }
+
+            .containerSubItem p span{
+                font-size: 15px;
+                color:  #262626;
+                font-weight: 600;
+            }
+
+
+.containerItem:nth-of-type(3){
+    display: grid;
+    /* border: 1px solid yellow; */
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+    .containerSubItem1:nth-of-type(1){
+        /* border: 1px solid blue; */
+        display: grid;
+        align-self: flex-end;
+    }
+
+        .containerSubItem1:nth-of-type(1) p{
+            /* border: 1px solid blue; */
+            font-size: 15px;
+            color:  #262626;
+            font-weight: 600;
+        }
+    .containerSubItem1:nth-of-type(2){
+        /* border: 1px solid rgb(117, 117, 255); */
+        display: grid;
+        align-self: center;
+    }
+
+        .containerSubItem1:nth-of-type(2) p{
+            /* border: 1px solid blue; */
+            font-size: 15px;
+            color:  #262626;
+            font-weight: 500;
+        }
+
+        .containerSubItem1:nth-of-type(2) p span{
+
+            font-size: 15px;
+            color:  #1164b3;
+            font-weight: 500;
+        }
+
+
+
+.containerItem:nth-of-type(4){
+    display: grid;
+    align-self: center;
+}
+
+    .containerItem:nth-of-type(4) small{
+        font-size: 11px;
+        color:  #262626;
+        font-weight: 500;
+        letter-spacing: 0.3px;
+    }
+
+    .containerItem:nth-of-type(4) small span{
+        font-size: 11px;
+        color:  #a1a1a1;
+        font-weight: 500;
+    }
     /* AQUI FINALIZA EL CONTENIDO DEL HEADER */
