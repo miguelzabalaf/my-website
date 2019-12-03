@@ -310,7 +310,7 @@ body{
     .containerDestacados{
         width: 935px;
         height: 130px;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         display: grid;
         grid-template: 1fr / repeat(5, 1fr);
     }
@@ -318,7 +318,7 @@ body{
     .itemDestacado:nth-of-type(1){
         display: grid;
         grid-template: 4fr 1fr / 1fr;
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
     }
 
 
@@ -326,25 +326,25 @@ body{
     .itemDestacado:nth-of-type(2){
         display: grid;
         grid-template: 4fr 1fr / 1fr;
-        border: 1px solid red;
+        /* border: 1px solid red; */
     }
 
     .itemDestacado:nth-of-type(3){
         display: grid;
         grid-template: 4fr 1fr / 1fr;
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
     }
 
     .itemDestacado:nth-of-type(4){
         display: grid;
         grid-template: 4fr 1fr / 1fr;
-        border: 1px solid red;
+        /* border: 1px solid red; */
     }
 
     .itemDestacado:nth-of-type(5){
         display: grid;
         grid-template: 4fr 1fr / 1fr;
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
     }  
 
         .itemDestacado .subItemDestacado:nth-of-type(1){
@@ -353,11 +353,20 @@ body{
             align-self: center;
         }
 
-            .itemDestacado .subItemDestacado:nth-of-type(1) figure{
+            .itemDestacado .subItemDestacado:nth-of-type(1){
                 width: 87px;
                 height: 87px;
-                border: 1px solid orange;
+                border: 1px solid #DBDBDB;
                 border-radius: 50%;
+
+            }
+
+            .itemDestacado .subItemDestacado:nth-of-type(1)  img{
+                width: 77px;
+                height: 77px;
+                border-radius: 50%;
+                align-self: center;
+                justify-self: center;
             }
 
         .itemDestacado .subItemDestacado:nth-of-type(2){
@@ -365,3 +374,9 @@ body{
             justify-self: center;
             align-self: center;
         }
+
+            .itemDestacado .subItemDestacado:nth-of-type(2) p{
+                color:  #262626;
+                font-weight: 550;
+                opacity: 0.9;
+            }
