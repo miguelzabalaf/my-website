@@ -302,3 +302,66 @@ body{
         font-weight: 500;
     }
     /* AQUI FINALIZA EL CONTENIDO DEL HEADER */
+
+    /* MIGUEL ZABALA FIGUEROA */
+
+    /* DESDE AQUÍ COMIENZA EL CONTAINER DE DESTACADOS */
+
+    .containerDestacados{
+        width: 935px;
+        height: 130px;
+        border: 1px solid red;
+        display: grid;
+        grid-template: 1fr / repeat(5, 1fr);
+    }
+
+    .itemDestacado:nth-of-type(1){
+        display: grid;
+        grid-template: 4fr 1fr / 1fr;
+        border: 1px solid blue;
+    }
+
+
+
+    .itemDestacado:nth-of-type(2){
+        display: grid;
+        grid-template: 4fr 1fr / 1fr;
+        border: 1px solid red;
+    }
+
+    .itemDestacado:nth-of-type(3){
+        display: grid;
+        grid-template: 4fr 1fr / 1fr;
+        border: 1px solid blue;
+    }
+
+    .itemDestacado:nth-of-type(4){
+        display: grid;
+        grid-template: 4fr 1fr / 1fr;
+        border: 1px solid red;
+    }
+
+    .itemDestacado:nth-of-type(5){
+        display: grid;
+        grid-template: 4fr 1fr / 1fr;
+        border: 1px solid blue;
+    }  
+
+        .itemDestacado .subItemDestacado:nth-of-type(1){
+            display: grid;
+            justify-self: center;
+            align-self: center;
+        }
+
+            .itemDestacado .subItemDestacado:nth-of-type(1) figure{
+                width: 87px;
+                height: 87px;
+                border: 1px solid orange;
+                border-radius: 50%;
+            }
+
+        .itemDestacado .subItemDestacado:nth-of-type(2){
+            display: grid;
+            justify-self: center;
+            align-self: center;
+        }
