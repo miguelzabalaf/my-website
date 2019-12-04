@@ -11,6 +11,7 @@
     --Purple: #3E376E;
     --DarkPurple: #272343;
     --lightGray: rgba(0,0,0,0.100);
+    --Yellow: rgb(247, 255, 131);
   }
   /* Fin de las variables de colores */
 
@@ -393,7 +394,7 @@ h1{
             width: 100%;
             height: auto;
             padding: 0 0.5em;
-            margin: 0 0 1em 0;
+            margin: 0 0 '1em' 0;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -503,9 +504,11 @@ h1{
                         border-radius: 50%;
                         transition: all 0.3s;
                     }
-                    .a1s2CardImageContainer img:hover{
+
+                    .cardLink:hover .a1s2CardImageContainer img{
                         transform: scale(1.2);
                     }
+
                 
                 .a1s2Details{
                     /* border: 1px solid red; */
@@ -587,7 +590,7 @@ h1{
                 margin: 0.5em 0.5em 0 0.5em;
                 height: auto;
                 padding: 0.5em;
-
+                transition: all 0.3s;
             }
 
                 .a2s2CardContentitem{
@@ -612,6 +615,10 @@ h1{
                 }
                 .a2s2CardContent a:hover{
                     background-color: var(--DarkPurple);
+                }
+
+                .a2s2CardContent a:hover span{
+                    color: rgb(247, 255, 131);
                 }
 
 
@@ -739,12 +746,20 @@ h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    border: 1px solid green;
+    /* border: 1px solid green; */
+}
+
+.titleSection{
+    display: flex;
+    width: 100%;
+    margin-bottom: 0.5em;
+    color: var(--DarkPurple);
+    border-bottom: 2px solid var(--Purple) ;
 }
 
     .s3Proyects{
-        border: 1px solid red;
-        padding: 1em;
+        /* border: 1px solid red; */
+        padding: 0 1em 1em 1em;
         display: grid;
         grid-template-rows: 1fr; 
         grid-template-columns: repeat(auto-fill, 250px);
@@ -761,6 +776,7 @@ h1{
             background-color: white;
             border-radius: 10px;
             overflow: hidden;
+            box-shadow: 0px 0px 5px -3px rgba(0,0,0,0.75);
         }
         .proyect:hover img{
             transform: scale(1.5);
@@ -780,12 +796,14 @@ h1{
 
         .proyect .info{
             display: block;
-            padding: 0.5em;
+            padding: 0.3em;
         }
         .proyect .info .title h3{
             text-align: center;
             margin-bottom: 0.5em;
             opacity: 0.8;
+            padding-bottom: 0.5em;
+            border-bottom: 1px solid var(--lightGray);
         }
 
         .proyect .info .description p{
@@ -813,6 +831,7 @@ h1{
 
         .link .linkedin:hover{
             background-color:  var(--DarkPurple);
+            
         }
 
         .link .linkedin:hover a{
@@ -936,10 +955,9 @@ h1{
 
 @media screen and (max-width:773px){
 
-    .a1s2CardImageContainer img:hover{
+    .cardLink:hover .a1s2CardImageContainer img{
         transform: scale(1);
     }
-}
 @media screen and (max-width:773px) and (min-width:672px){
     .a1s2{
         padding-bottom: 0;
@@ -1194,7 +1212,7 @@ h1{
         width: 100%;
     }
     .redes{
-        display: inline;
+        display: flex;
         width: 100%;
     }
 }
@@ -1209,5 +1227,39 @@ h1{
     .a2s2Card{
         width: auto;
         height: auto;
+    }
+}
+}
+
+@media screen and (max-width: 1181px){
+    .a1s2{
+        display: flex;
+        width: 100%;
+    }
+    
+    .a2s2{
+        display: flex;
+        width: 100%;
+        
+    }
+
+    .a1s2CardImageContainer{
+        height: 100%;
+        width: 50%;
+    }
+
+    .a1s2CardImageContainer img{
+        width: 100%;
+    }
+
+    .cardLink:hover .a1s2CardImageContainer img{
+        transform: scale(1);
+    }
+
+    .a2s2Card:nth-child(2){
+        display: none;
+    }
+    .redes{
+        display: none;
     }
 }
