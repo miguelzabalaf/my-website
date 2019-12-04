@@ -436,7 +436,7 @@ h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
     .a1s2{
@@ -1054,6 +1054,6 @@ h1{
     }
     .redes{
         display: inline;
-        /* width: 100%; */
+        width: 100%;
     }
 }
