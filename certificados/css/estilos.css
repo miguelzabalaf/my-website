@@ -31,6 +31,9 @@
     transition: all 0.3s;
 }
 
+    .certificaciones:hover{
+        box-shadow: 0px 0px 5px -3px rgba(0,0,0,0.75);
+    }
     .certificacionesHeader{
         border: 1px solid red;
         padding: 0.5em 0;
@@ -47,11 +50,15 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            transition: all 0.3s;
         }
-            .cHImage img{
+        .cHImage img{
                 width: 100%;
                 border-radius: 50%;
-
+                
+            }
+            .certificaciones:hover .cHImage{
+                border: 2px solid var(--Purple);
             }
 
         .cHTitle{
@@ -77,16 +84,21 @@
                 align-items: center;
                 justify-content: center;
                 text-decoration: none;
-                font-size: 18px;
+                font-size: 16px;
                 color: white;
                 background-color: var(--Purple);
                 border-radius: 5px;
                 border-bottom: 2px solid var(--DarkPurple);
                 font-weight: 600;
+                transition: all 0.3s;
             }
             .cHTitle a span{
-                font-size: 20px;
+                font-size: 18px;
                 margin: 0.5em;
+            }
+
+            .cHTitle a:hover{
+                background-color: var(--DarkPurple);
             }
             
 
