@@ -105,7 +105,7 @@ h1{
     top: 0;
     left: 0;
     box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .containerHeader{
@@ -114,7 +114,7 @@ h1{
     justify-content: space-between;
     width: 1200px;
     margin: 0 auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .logo{
@@ -193,7 +193,7 @@ h1{
 /* Desde aquí comienza el contenido */
 
 .containerContent{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     max-width: 1200px;
     margin: 0 auto;
     padding:0 
@@ -402,7 +402,7 @@ h1{
             .sectionSeeMore a{
                 text-decoration: none;
                 /* border: 1px solid blue; */
-                border-bottom: 3px solid var(--DarkPurple);
+                border-bottom: 3px solid var(--Purple);
                 height: 35px;
                 display: flex;
                 align-items: center;
@@ -417,6 +417,8 @@ h1{
 
             .sectionSeeMore a:hover{
                 box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
+                border-bottom: 3px solid var(--DarkPurple);
+                background-color: var(--DarkPurple);
             }
             
             .sectionSeeMore a:hover span{
@@ -606,7 +608,10 @@ h1{
                     border-radius: 5px;
                     background-color: var(--Purple);
                     color: white;
-                    
+                    transition: all 0.3s;
+                }
+                .a2s2CardContent a:hover{
+                    background-color: var(--DarkPurple);
                 }
 
 
