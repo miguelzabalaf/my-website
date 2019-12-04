@@ -10,6 +10,7 @@
     --LightBlue: rgb(220, 235, 235);
     --Purple: #3E376E;
     --DarkPurple: #272343;
+    --lightGray: rgba(0,0,0,0.100);
   }
   /* Fin de las variables de colores */
 
@@ -1048,6 +1049,6 @@ h1{
     }
     .redes{
         display: inline;
-        width: 100%;
+        /* width: 100%; */
     }
 }
