@@ -19,20 +19,109 @@
     grid-gap: 1em;
     justify-content: space-evenly;
     align-items: center;
+    transition: all 0.3s;
 }
 
 .certificaciones{
     border: 1px solid var(--lightGray);
     background-color: white;
-    display: flex;
+    display: block;
     border-radius: 5px;
     padding: 0.5em;
+    transition: all 0.3s;
 }
+
+    .certificacionesHeader{
+        border: 1px solid red;
+        padding: 0.5em 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+        .cHImage{
+            border: 2px solid var(--lightGray);
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            .cHImage img{
+                width: 100%;
+                border-radius: 50%;
+
+            }
+
+        .cHTitle{
+            border: 1px solid blue;
+            height: auto;
+            width: 70%;
+
+        }
+            .cHTitle h2{
+                height: 50%;
+                padding: 0.2em 0;
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                border: 1px solid red;
+            }
+            .cHTitle a{
+                height: 40%;
+                padding: 0.3em 0;
+                /* border: 1px solid red; */
+                margin: 0.2em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                font-size: 18px;
+                color: white;
+                background-color: var(--Purple);
+                border-radius: 5px;
+                border-bottom: 2px solid var(--DarkPurple);
+                font-weight: 600;
+            }
+            .cHTitle a span{
+                font-size: 20px;
+                margin: 0.5em;
+            }
+            
+
+
+    .certificacionesContent{
+        border: 1px solid blue;
+        margin: 0.5em 0 0 0;
+        padding: 0.5em;
+        height: auto;
+    }
+
+        .certificacionesContent p{
+            font-size: 16px;
+            color: rgba(0,0,0, 0.6);
+            margin: 0.2em;
+        }
+
 
 
 
 /* MEDIAQUERIES ~ MIGUEL ZABALA F */
 
+@media screen and (max-width:791px) and (min-width:320px){
+    .certificacionesContainer{
+        grid-template-columns: repeat(auto-fill, minmax(250px, 550px));
+    }
+}
+
+@media screen and (max-width: 1178px) and (min-width:792px){
+
+    .certificacionesContainer{
+        grid-template-columns: repeat(auto-fill, minmax(150px, 350px));
+    }
+
+}
 
 @media screen and (max-width: 1073px){
     .certificacionesContainer{
