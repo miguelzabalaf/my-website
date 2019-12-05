@@ -742,6 +742,7 @@ h1{
     width: 95%;
     margin: 1em auto;
     margin-top: 0;
+    margin-bottom: 0;
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -879,6 +880,23 @@ h1{
 
 
     /* AQUÍ FINALIZA LA SECCIÓN3 */
+
+    /* AQUÍ COMIENZA LA SECCIÓN4 */
+    .section4{
+        width: 95%;
+        margin: 1em auto;
+        margin-top: 0;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /* border: 1px solid green; */
+    }
+
+    .section4 .info{
+        margin: 0.5em 0;
+    }
+    /* AQUÍ FINALIZA LA SECCIÓN4 */
 
     /* MIGUEL ZABALA FIGUEROA 2019 */
 

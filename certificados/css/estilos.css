@@ -5,7 +5,9 @@
 }
 
 /* Todo Diseñad, maquetado y animado por Miguel Zabala F. */
-
+:root{
+    --Degrade: linear-gradient(to right, var(--Purple), var(--Blue));
+}
 .certificacionesContainer{
     /* border: 1px solid blue; */
     width: 95%;
