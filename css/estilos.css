@@ -54,9 +54,10 @@ body{
         position: fixed;
         opacity: 0.9;
         top: 0;
+        z-index: 99;
         margin-top: 3em;
         transition: all 0.3s;
-        transform: translateY(-100%);
+        transform: translateY(-150%);
         /* display: none; */
     }
 
