@@ -10,13 +10,13 @@
 }
 
 .DestacadosContainer{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 95%;
     height: auto;
     padding: 1em;
     margin: 0 auto;
     display: grid;
-    grid-template: minmax(100px, 125px) / repeat(10, minmax(75px, 100px));
+    grid-template: minmax(100px, 120px) / repeat(10, minmax(75px, 100px));
     grid-gap: 1em;
     justify-content: flex-start;
     align-items: center;
@@ -24,11 +24,48 @@
     overflow: auto;
 }
 
+.DestacadosContainer a{
+    text-decoration: none;
+}
     .DestacadosContainer .item{
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
+        background-color: white;
         width: 100%;
         height: 100%;
+        padding: 0.5em;
+        border-radius: 15px;
+        transition: all 0.3s;
     }
+    .DestacadosContainer .item:hover{
+        transform: scale(0.95);
+    }
+    .DestacadosContainer .item figure{
+        max-width: 70%;
+        height: auto;
+        margin: auto;
+        border: 2px solid var(--Purple);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        margin: 0.5em auto;
+    }
+    .DestacadosContainer .item figure img{
+        width: 100%;
+        height: auto;
+    }
+    .DestacadosContainer .item .title{
+        display: flex;
+        justify-content: center;
+
+    }
+    .DestacadosContainer .item small{
+        color: rgba(0,0,0,0.50);
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0.5em;
+    }
+
 .certificacionesContainer{
     /* border: 1px solid blue; */
     width: 95%;
@@ -151,6 +188,12 @@
 
 
 /* MEDIAQUERIES ~ MIGUEL ZABALA F */
+
+@media screen and (max-width:768px){
+    .DestacadosContainer{
+        width: 100%;
+    }
+}
 @media screen and (min-width: 320px) and (max-width: 500px){
 
     .cHImage{
