@@ -1,0 +1,19 @@
+.containerContentBlog{
+    border: 1px solid blue;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0.5em; 
+}
+
+.containerCards{
+    border: 1px solid red;
+    margin: 1em 0 1em 0;
+
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr);
+    grid-row-gap: 1em;
+}
+
+.card{
+    border: 1px solid blue;
+}
