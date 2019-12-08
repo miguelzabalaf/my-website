@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 /* Variaables de colores */
 :root {
     --Blue: #BAE8E8;
@@ -44,7 +48,6 @@ body{
     cursor: pointer;
     z-index: 200;
 }
-
 
 
     .menuResponsive{
