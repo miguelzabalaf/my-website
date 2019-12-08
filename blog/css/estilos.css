@@ -1,12 +1,17 @@
 .containerContentBlog{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     max-width: 1200px;
     margin: 50px auto;
     padding: 0.5em; 
 }
-
+.containerContentBlog small{
+    opacity: 0.5;
+}
+.containerContentBlog span{
+    color: var(--Purple);
+}
 .containerCards{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 1em 0 1em 0;
 
     display: grid;
@@ -15,5 +20,156 @@
 }
 
 .card{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
+    text-decoration: none;
+    color: var(--Black);
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: white;
+    transition: all 0.3s;
+    border-left: 5px solid var(--Purple) ;
+    box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
 }
+.card:hover{
+    border-left: 5px solid var(--Purple) ;
+    box-shadow: 0px 0px 5px -3px rgba(0,0,0,0.75);
+    transform: scale(0.99);
+}
+.card .sectionCard{
+    display: grid;
+    grid-template: 1fr / minmax(70px, 1fr) 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+    .sectionCard .img{
+        grid-column: 1 / span 1;
+    }
+        .sectionCard .img figure{
+            max-width: 100%;
+            max-height: 100%;
+            display: flex;
+            background-color: var(--Blue);
+        }
+        .sectionCard .img figure img{
+            width: 100%;
+        }
+
+    .sectionCard .info{
+        grid-column: 2 / span 6;
+    }
+
+    .sectionCard .info .title{
+        /* border: 1px solid red; */
+        height: 30%;
+        padding: 0 0.5em;
+        display: flex;
+        align-items: center;
+    }
+        .sectionCard .info .title h2{
+            font-size: 20px;
+        }
+    .sectionCard .info .date{
+        /* border: 1px solid blue; */
+        height: 20%;
+        display: flex;
+        align-items: center;
+        padding: 0 0.5em;
+    }
+        .sectionCard .info .date p{
+            color: rgba(0, 0, 0, 0.50);
+            font-weight: bold;
+            font-size: 12px;
+        }
+    .sectionCard .info .description{
+        /* border: 1px solid gray; */
+        height: 30%;
+        display: flex;
+        align-items: center;
+        padding: 0 0.5em;
+    }
+        .sectionCard .info .description p{
+            color: rgba(0, 0, 0, 0.50);
+            font-weight: bold;
+        }
+    .sectionCard .info .themes{
+        /* border: 1px solid black; */
+        height: 20%;
+    }
+
+    .sectionCard .info .themes{
+        display: flex;
+
+        align-items: center;
+    }
+    .sectionCard .info .themes span{
+        font-size: 12px;
+        color: white;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin: 0.5em;
+        
+    }
+
+
+
+
+    /* TEMAS _____________________________________________ */
+
+.html{
+    background-color: #F16529 ;
+    border-radius: 5px;
+    padding: 0.3em;
+}
+.css{
+    background-color: #146FB1 ;
+    border-radius: 5px;
+    padding: 0.3em;
+}
+.git{
+    background-color: #E94E32 ;
+    border-radius: 5px;
+    padding: 0.3em;
+}
+.github{
+    background-color: #161415 ;
+    border-radius: 5px;
+    padding: 0.3em;
+}
+
+
+    /* TEMAS _____________________________________________ */
+
+
+    /* MEDIA _____________________________________________ */
+
+    @media screen and (max-width: 1200px){
+        .sectionCard .img{
+            display: none;
+        }
+        .sectionCard .info{
+
+            grid-column: 1 / span 7;
+        }
+    }    
+
+    @media screen and (max-width: 768px){
+        .sectionCard .info .description{
+            display: none;
+        }
+        .sectionCard .info .title{
+            height: 50%;
+        }
+        .sectionCard .info .title h2{
+            font-size: 16px;
+        }
+        .sectionCard .info .date{
+            height: 25%;
+        }
+        .sectionCard .info .themes{
+            height: 25%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .sectionCard .info .themes span{
+           font-size: 10px;
+        }
+    }
+    
