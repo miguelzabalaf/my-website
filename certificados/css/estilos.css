@@ -36,6 +36,7 @@
         padding: 0.5em;
         border-radius: 5px;
         transition: all 0.3s;
+        align-items: center;
     }
 
     .DestacadosContainer .item:hover{
@@ -53,6 +54,7 @@
         display: flex;
         align-items: center;
         margin: 0.5em auto;
+        margin-top: 0;
     }
     .DestacadosContainer .item figure img{
         width: 100%;
