@@ -37,6 +37,7 @@
         border-radius: 5px;
         transition: all 0.3s;
     }
+
     .DestacadosContainer .item:hover{
         transform: scale(0.95);
     }
