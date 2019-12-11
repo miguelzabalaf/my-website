@@ -824,6 +824,7 @@ h1{
         .proyect .info .link{
             display: flex;
             justify-content: space-between;
+            margin: 0.5em;
         }
 
         .link .linkedin{
