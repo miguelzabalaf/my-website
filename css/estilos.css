@@ -912,6 +912,52 @@ h1{
 
 /* Aquí termina el contenido*/
 
+/* AQUI COMIENZA EL FOOTER */
+
+.footer{
+    /* border: 1px solid red; */
+    padding: 1em;
+    height: 100%;
+    background-color: var(--Blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .footer .section1{
+        /* display: flex; */
+        height: 100%;
+        padding-top: 0;
+        padding-bottom: 0;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .footer .section2{
+        /* display: flex; */
+        height: 100%;
+        padding-top: 0;
+        margin-bottom: 0;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .footer .section1 a{
+        text-decoration: none;
+        color: var(--Purple);
+        font-weight: bolder;
+        margin: 1em;
+    }
+    
+    .footer .section2 a{
+        text-decoration: none;
+        color: var(--Purple);
+        font-weight: bolder;
+        margin: 1em;
+    }
+/* AQUI TERMINA EL FOOTER */
+
+
 
 /* MEDIA QUERIES */
 @media screen and (max-width:671px){
