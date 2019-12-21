@@ -4,9 +4,7 @@
     padding: 0;
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
+
 
 /* Variaables de colores */
 :root {
