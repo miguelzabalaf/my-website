@@ -895,6 +895,7 @@ h1{
     .section4{
         width: 95%;
         margin: 1em auto;
+        padding: 0.5em;
         margin-top: 0;
         height: auto;
         display: flex;
@@ -902,6 +903,9 @@ h1{
         justify-content: space-between;
         /* border: 1px solid green; */
     }
+        .section4 p{
+            text-align: justify;
+        }
 
     .section4 .info{
         margin: 0.5em 0;
