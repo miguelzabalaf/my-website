@@ -28,11 +28,12 @@
     background-color: white;
     transition: all 0.3s;
     border-left: 5px solid var(--Purple) ;
-    box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
+    border: 1px solid #E5E5E5;
+    /* box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75); */
 }
 .card:hover{
     border-left: 5px solid var(--Purple) ;
-    box-shadow: 0px 0px 5px -3px rgba(0,0,0,0.75);
+    /* box-shadow: 0px 0px 5px -3px rgba(0,0,0,0.75); */
     transform: scale(0.99);
 }
 .card .sectionCard{
