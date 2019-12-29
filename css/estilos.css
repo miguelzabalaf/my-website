@@ -768,8 +768,9 @@ h1{
 
 .s3Proyects{
     /* border: 1px solid red; */
-    box-shadow: 0px 0px 5px -3px rgba(0,0,0,0.75);
-    background: white;
+                /* box-shadow: 0px 0px 5px -3px rgba(0,0,0,0.75); */
+        border: 1px solid #E5E5E5;
+        background: white;
         border-radius: 5px;
         padding: 0 1em 1em 1em;
         margin-bottom: 1em;
