@@ -182,7 +182,7 @@ h1{
         .heroTitle{
             text-align: center;
             color: var(--DarkPurple);
-            padding: 0 .2em;
+            padding: 0 .5em;
         }
 
         .heroTitle .show{
