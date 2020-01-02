@@ -1053,6 +1053,7 @@ h1{
     }
 
     .a1s2CardImageContainer img{
+        padding: 0.5em;
         width: 50%;
         border-radius: 50%;
     }
