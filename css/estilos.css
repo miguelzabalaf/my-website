@@ -476,10 +476,6 @@ h1{
             transition: all .3s;
         }
 
-        .a1s2Card:hover{
-            /* box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75); */
-        }
-
 
             .a1s2CardContainer{
                 /* border: 1px solid red; */
@@ -931,7 +927,7 @@ h1{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.75);
+    /* box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.75); */
 }
 
     .footer .section1{
