@@ -646,6 +646,10 @@ h1{
             background-color: var(--LightBlue);
         }
 
+        .a2s2CardNoteContent p {
+            text-align: justify;
+        }
+
     .a2s2CardPlataformsContent{
         display: flex;
         align-items: center;
