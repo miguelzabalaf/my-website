@@ -215,13 +215,6 @@ h1{
     /* border: 1px solid green; */
 }
 
-/* .articleContainer{
-    width: 100%
-    {
-    .a1s1{
-    width: 100%
-    }
-         */
 .articleContainer{
     display: flex;
     justify-content: space-between;
